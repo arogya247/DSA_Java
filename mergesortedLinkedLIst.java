@@ -13,7 +13,7 @@ public class LinkedList
         }
     }
     
-    public void mergeList(Node head1, Node head2)
+    public static void mergeList(Node head1, Node head2)
     {
         LinkedList llist;
         Node curr1 = head1;
@@ -27,7 +27,7 @@ public class LinkedList
         }
     }
     
-    public int compare (int x, int y)
+    public static int compare (int x, int y)
     {
         int bigger;
         if (x>y)
@@ -47,7 +47,7 @@ public class LinkedList
     
     
     
-    void push(int new_data)
+    Node push(int new_data)
     {
         //make a new node 
         Node new_node = new Node(new_data);
@@ -58,6 +58,7 @@ public class LinkedList
         //make head point to new node
         head = new_node;
         
+        return new_node;
     }
     
     public  void printList()
@@ -110,6 +111,3 @@ public class LinkedList
     }
     
 }
-
-
-

@@ -17,8 +17,8 @@ class Node
 /* Class to print the inorder traversal */
 public class BinaryTree 
 { 
-    static Node root; 
-    static void inorder(Node root){ 
+    Node root; 
+    void inorder(){ 
         
         if (root == null) 
             return; 
@@ -64,7 +64,7 @@ public class BinaryTree
         tree.root.right = new Node(3); 
         tree.root.left.left = new Node(4); 
         tree.root.left.right = new Node(5); 
-        inorder(root); 
+        tree.inorder(); 
         
        
         
